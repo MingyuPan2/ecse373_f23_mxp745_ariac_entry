@@ -57,10 +57,20 @@ This method will patch the em.py file of the Python3 empy module. By doing so, t
 
 To launch ARIAC 2019, use the following:
 
-	roslaunch ecse_373_ariac ecse_373_ariac.launch
+	roslaunch ariac_entry lab5.launch
 	
 This will launch the environment of a warehouse where everything is positioned. 
 
 To kill the launch properly and quickly, use:
 
 	killall gzserver gzclient roslaunch
+	
+When the environment was launched, it will not start properly until until the play botton was pressed at the bottom middle left of the screen.
+
+#### Run Competition Node
+
+To run the entry node for the competition, use the following:
+
+	rosrun ariac_entry lab5_node
+	
+The node can be ran if the play botton was not pressed. However, the node will output "Competition start failed", since the ariac/start_competition service will not have popped up if the play botton was not pressed. The node will always output the order number, the shipment number, what the products are and which bin they are in. The location of the bin will also be outputed. The location of a desired product in the arm's frame will also be outputed.  
