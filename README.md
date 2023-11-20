@@ -72,5 +72,9 @@ When the environment was launched, it will not start properly until until the pl
 To run the entry node for the competition, use the following:
 
 	rosrun ariac_entry lab5_node
-	
-The node can be ran if the play botton was not pressed. However, the node will output "Competition start failed", since the ariac/start_competition service will not have popped up if the play botton was not pressed. The node will always output the order number, the shipment number, what the products are and which bin they are in. The location of the bin will also be outputed. The location of a desired product in the arm's frame will also be outputed.  
+
+## Problems to Fix
+
+The node can be ran if the play botton was not pressed. However, the node will output "Competition start failed", since the ariac/start_competition service will not have popped up if the play botton was not pressed. Currently, I do not know how to fix this problem. The node will always output the order number, the shipment number, what the products are and which bin they are in. The location of the bin will also be outputed. The location of a desired product in the arm's frame will also be outputed.
+
+I still do not fully understand the buffer part of the lab and i do not know if the transformation is working correctly.
