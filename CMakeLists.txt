@@ -12,6 +12,9 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rviz
   std_msgs
+  ur_kinematics
+  geometry_msgs
+  ik_service
 )
 
 ## System dependencies are found with CMake's conventions
@@ -106,7 +109,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES ariac_entry
-#  CATKIN_DEPENDS ecse_373_ariac roscpp rviz std_msgs
+  CATKIN_DEPENDS ecse_373_ariac roscpp rviz std_msgs ur_kinematics geometry_msgs ik_service
 #  DEPENDS system_lib
 )
 
