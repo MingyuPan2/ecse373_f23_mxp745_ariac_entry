@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   ur_kinematics
   geometry_msgs
   ik_service
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
