@@ -74,5 +74,5 @@ To run the competition, use the following:
 
 ## Problems with the current node
 
-Under the src folder, the lab5_node-backup.cpp is the old node that only worked for lab5. For the final node, please see lab5_node.cpp.
-The node is still not functioning properly and i don't know how to fix everything, so i put a lot of explanations next to the code for context of what i was trying to do.
+Under the src folder, the lab5_node-backup.cpp is the old node that only worked for lab5. For the final node, please see the rewritten lab5_node.cpp.
+The node is still not functioning properly and i still can't figure out how to fix some of the problems, so i put a lot of explanations next to the code for context of what i was trying to do inside each section of the node (ik_service node alone is working fine though). 
