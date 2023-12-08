@@ -4,6 +4,6 @@
 
 <node name="lab5_node" type="lab5_node" pkg="lab5_ws" />
 
-<node name="ik_service" type="ik_service" pkd="ik_srevice" />
+<node name="ik_service" type="ik_service" pkd="ik_srevice" /> 
 
 </launch>
