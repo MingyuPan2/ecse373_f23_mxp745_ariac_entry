@@ -4,6 +4,11 @@
 
 This is the final submission for the ariac competition. This lab also depends on lab 6, where inverse kinematics solutions were calculated.
 
+## Problems with the current node
+
+Under the src folder, the lab5_node-backup.cpp is the old node that only worked for lab5. For the final node, please see the rewritten lab5_node.cpp.
+The node is still not functioning properly and i still can't figure out how to fix some of the problems, so i put a lot of explanations next to the code for context of what i was trying to do inside each section of the node (ik_service node alone is working fine though). 
+
 ### Lab 5-6-7 Link
 
 Lab 5 Link: [Laboratory #5_20231016_cert.pdf](https://canvas.case.edu/courses/38747/assignments/509274)
@@ -71,8 +76,3 @@ When the environment was launched, it will not start properly until until the pl
 To run the competition, use the following:
 
 	roslaunch ariac_entry lab5.launch
-
-## Problems with the current node
-
-Under the src folder, the lab5_node-backup.cpp is the old node that only worked for lab5. For the final node, please see the rewritten lab5_node.cpp.
-The node is still not functioning properly and i still can't figure out how to fix some of the problems, so i put a lot of explanations next to the code for context of what i was trying to do inside each section of the node (ik_service node alone is working fine though). 
