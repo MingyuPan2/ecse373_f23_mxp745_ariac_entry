@@ -1,18 +1,17 @@
-# Lab 5: ARIAC 2019 Part 1: Installation etc.
+# Lab 5-6-7: ARIAC Competition
 
 ## Overview
 
-This laboratory will develop the foundation for a system to address elements of a ARIAC competition.
-The lab will extend existing knowledge of ROS message publishing and subscribing to the use of ROS
-services and action servers.
+This is the final submission for the ariac competition. This lab also depends on lab 6, where inverse kinematics solutions were calculated.
 
-### Lab 4 Link
+### Lab 5-6-7 Link
 
 Lab 5 Link: [Laboratory #5_20231016_cert.pdf](https://canvas.case.edu/courses/38747/assignments/509274)
-
+Lab 6 Link: [Laboratory #6_20231027_cert.pdf](https://canvas.case.edu/courses/38747/assignments/509275)
+Lab 7 Link: [Laboratory #7_20231113_cert.pdf](https://canvas.case.edu/courses/38747/assignments/527520)
 ARIAC 2019 Environment: [Ariac 2019] (https://bitbucket.org/osrf/ariac/wiki/2019/Home)
 
-## Basic Install
+## Basic Install (Lab 5)
 
 ### Install Simulation Environment
 
@@ -67,14 +66,13 @@ To kill the launch properly and quickly, use:
 	
 When the environment was launched, it will not start properly until until the play botton was pressed at the bottom middle left of the screen.
 
-#### Run Competition Node
+#### Run the Competition Node
 
-To run the entry node for the competition, use the following:
+To run the competition, use the following:
 
-	rosrun ariac_entry lab5_node
+	roslaunch ariac_entry lab5.launch
 
-## Problems to Fix
+## Problems with the current node
 
-The node can be ran if the play botton was not pressed. However, the node will output "Competition start failed", since the ariac/start_competition service will not have popped up if the play botton was not pressed. Currently, I do not know how to fix this problem. The node will always output the order number, the shipment number, what the products are and which bin they are in. The location of the bin will also be outputed. The location of a desired product in the arm's frame will also be outputed.
-
-I still do not fully understand the buffer part of the lab and i do not know if the transformation is working correctly.
+Under the src folder, the lab5_node-backup.cpp is the old node that only worked for lab5. For the final node, please see lab5_node.cpp.
+The node is still not functioning properly and i don't know how to fix everything, so i put a lot of explanations next to the code for context of what i was trying to do.
