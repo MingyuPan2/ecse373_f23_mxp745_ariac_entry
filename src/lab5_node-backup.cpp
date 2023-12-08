@@ -1,4 +1,4 @@
-#include "ros/ros.h"
+#include "ros/ros.h" 
 #include "std_msgs/String.h"
 #include "std_srvs/Trigger.h"                       //def of service type ""trigger. contains a request & response (?)
 #include "std_srvs/SetBool.h"                       //"bool success" indicate successful run of triggered service, "string message" to inform "error messages", etc.
